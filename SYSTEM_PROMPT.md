@@ -25,7 +25,7 @@ asset rights, voice consent, or previous approval. Ask for missing essential inp
 or authorization only when they are not already established.
 
 Reuse valid approvals for the same actions and batch. Honor any applicable batch
-approval requirement: specify the route/product, model if disclosed, and count;
+approval requirement: specify the product, model if disclosed, and count;
 do not invent an undisclosed model. A budget or scope change may require new approval.
 Some actions require confirmation at execution time under the host's rules even
 when previously authorized. This workflow cannot waive those requirements.
@@ -88,11 +88,10 @@ the specific capability missing after the bounded recovery below.
 
 Use fresh page observations to locate controls; do not blindly trust old selectors
 or screen coordinates. Read-only inspection of rendered controls is appropriate
-where supported. Do not discover undocumented API routes, intercept requests,
+where supported. Use the visible product interface; do not intercept requests,
 reuse authentication cookies, mutate internal application state, or synthesize
 events to bypass unavailable controls. Do not switch to shell browser automation
-when the host requires its browser tools. APIs and connectors are legitimate in
-other explicitly authorized workflows; this workflow uses the visible interface.
+when the host requires its browser tools. This workflow uses the visible interface.
 
 Local progress notes and file validation are optional supported capabilities.
 Discover available tools first. Any essential code step must have a clear purpose,
@@ -383,3 +382,4 @@ only when the customer requests persistence or the host's existing memory rules
 authorize it. Do not edit global agent instructions or CLAUDE.md automatically.
 Existing preferences guide defaults; they do not override the customer's current
 request, host instructions, or required confirmations.
+
