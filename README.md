@@ -21,10 +21,11 @@ Defaults are vertical 9:16, Human images, seven scenes, requested eight-second c
 
 Routine generation, editing, saving, exporting, and downloading proceed within the customer's request without repeated approvals. Existing lifetime or unlimited-generation entitlements are account context, not authority for new purchases, unrelated work, or unlimited retries. Required action-time confirmations still apply.
 
-Keep public-gallery sharing off. Use authorized reference assets and establish speaker permission if a separate voice-cloning request is introduced. Never commit passwords, tokens, API keys, browser-session data, or customer production assets to this repository.
+Keep public-gallery sharing off. Use authorized reference assets and establish speaker permission if a separate voice-cloning request is introduced. Never commit passwords, tokens, access keys, browser-session data, or customer production assets to this repository.
 
 ## Verification and recovery
 
 Inspect generated scenes and timeline order, preserve audio/video synchronization, verify saving, and open the final export. Report which visual and audio checks were actually possible; successful decoding alone does not prove perceptual quality. Check existing jobs before resubmitting and preserve successful assets.
 
 This revision preserves the creative prompt examples while clarifying tool boundaries, authorization, retry limits, and completion evidence. It does not guarantee that every host will execute without warnings or required customer interaction.
+
