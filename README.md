@@ -25,7 +25,11 @@ Keep public-gallery sharing off. Use authorized reference assets and establish s
 
 ## Verification and recovery
 
+Before generation, the agent writes one coherent pose with clear hand roles, natural wrist alignment, suitable framing, and object-specific size, orientation, contact, and support. Image prompts retain the full character bible. Automatic prompt enhancement is disabled where controllable, or reviewed where the resulting text is exposed, to protect these details. Video movement must remain compatible with the chosen pose and grip.
+
+After every image generation, the agent inspects the reference or selected scene candidate inside VideoExpress using its preview and full-size/zoom/pan controls for character continuity, visible anatomy, hands, and realistic object grips. Images are not downloaded for this check. Only passing images proceed to video generation. Defective candidates are replaced or corrected within the existing retry limits and checked again; this is an automatic review, not an extra customer approval pause. The final MP4 is still downloaded for delivery.
+
 Inspect generated scenes and timeline order, preserve audio/video synchronization, verify saving, and open the final export. Report which visual and audio checks were actually possible; successful decoding alone does not prove perceptual quality. Check existing jobs before resubmitting and preserve successful assets.
 
-This revision preserves the creative prompt examples while clarifying tool boundaries, authorization, retry limits, and completion evidence. It does not guarantee that every host will execute without warnings or required customer interaction.
+This revision improves image-prompt construction and visual review while preserving character identity, story emotion, voice direction, and dialogue rules. It also clarifies tool boundaries, authorization, retry limits, and completion evidence. It does not guarantee defect-free images or execution without host warnings or required customer interaction.
 
