@@ -2,8 +2,8 @@
 
 Use this reviewed workflow when the customer asks to create a video with it.
 Providing this document for review does not authorize executing production.
-This revision changes operational instructions, not the creative prompt examples,
-character-bible requirements, emotional wave, voice direction, or dialogue rules.
+This revision adds preventive image-prompt guidance and visual checkpoints while
+preserving character identity, the emotional wave, voice direction, and dialogue rules.
 
 ## 1. Purpose and expected output
 
@@ -103,7 +103,7 @@ to work around a tool restriction.
 
 ### Step 1 — Write the script and character bible
 
-The creative specifications below are preserved from the original workflow.
+The story and character specifications below retain the original workflow's intent.
 Apply scene-count suggestions within the customer's approved scope and budget.
 
 A) THE CHARACTER BIBLE — one dense paragraph, 40-70 words, that you will paste
@@ -192,11 +192,16 @@ generation length and the product's displayed script limits determine feasibilit
 For an AI character:
 
 1. Leave Use Consistent Character off until a reference exists.
-2. In Image Prompt, enter the character bible plus "looking at the camera, head
-   and shoulders close-up, neutral friendly expression".
-3. Leave Automatically enhance my image prompt enabled when available. Generate
+2. In Image Prompt, enter the character bible plus "One person, looking directly
+   at the camera, head-and-shoulders portrait at eye level, neutral friendly
+   expression, upright relaxed posture, naturally aligned neck and shoulders,
+   face fully visible and in focus; hands and props outside the portrait frame."
+   Keep hands and props out of this identity reference unless the customer's
+   requested reference specifically requires them.
+3. Use the prompt-enhancement guidance below when the option is available. Generate
    within the approved image count, with public-gallery sharing off.
-4. Inspect the returned candidates and select a clean front-facing close-up.
+4. Apply the image checkpoint below to every candidate considered for use, including
+   the reference. Select a clean front-facing close-up only after it passes.
    Use Save Image and confirm it appears in My AI Images. If saving times out,
    check the library before retrying; do not regenerate the image.
 
@@ -222,14 +227,20 @@ THE CONSISTENT CHARACTER DOCTRINE — the single most important rule in this job
 
   For EVERY scene, the "Image Prompt" field must contain the FULL character bible
   word-for-word — age, build, face, hair, exact clothing, exact location, exact
-  lighting — followed by only the new action or expression.
+  lighting — followed by the scene's expression, pose, framing, and any object
+  interaction, constructed using the guidance below.
   Never write "same woman as before", "she now...", or any reference to a previous
   scene. The generator has no memory. A shortened description produces a different
   human being. Copy-paste the bible; change only the last clause.
 
   Scene 3 example:
-    Image Prompt:  <ENTIRE BIBLE VERBATIM> + " She leans slightly forward, one
-                   eyebrow raised, mid-sentence, gesturing with her right hand."
+    Image Prompt:  <ENTIRE BIBLE VERBATIM> + " One person in an eye-level,
+                   waist-up view. She leans slightly forward with one eyebrow
+                   raised. Her right elbow is comfortably bent beside her torso,
+                   right hand open at waist height, palm angled upward, fingers
+                   gently curved. Her left arm rests naturally at her side.
+                   Both wrists remain aligned with their forearms; hands are
+                   fully within the frame, with natural proportions."
     Video and Audio Prompt:  "Neutral American English accent, warm confident
                    tone. Natural head movement, direct eye contact with camera,
                    soft office ambience." (scene + voice direction ONLY)
@@ -238,7 +249,62 @@ THE CONSISTENT CHARACTER DOCTRINE — the single most important rule in this job
 
 Speech ALWAYS goes in "Actor 1 Script" inside the Create Lipsync Audio dialog —
 never in "Image Prompt" and never in "Video and Audio Prompt" (see the steps below). Include the accent and tone phrase in the
-Video and Audio Prompt of every scene, identically.
+Video and Audio Prompt when enabled. When Lipsync HD disables that field, put the
+identical voice phrase and scene movement direction in the Create Lipsync Audio
+dialog's Video Prompt instead; do not try to edit a disabled field.
+
+#### Construct the image prompt before every generation
+
+Use this order: **verbatim character bible + emotion + one stable pose + framing
++ object size, orientation, and support when relevant**. Write a single coherent
+still image, not a sequence of movements. Resolve conflicting instructions before
+submitting. Keep these additions outside the frozen character bible.
+
+- Express the intended emotion through a specific facial expression and a simple,
+  physically plausible posture. Use one clear gesture; do not ask the same hand to
+  hold a device, point, and touch the face at once. Identify hands from the
+  character's perspective, not the viewer's.
+- When hands matter, assign each visible hand a clear role, describe relaxed elbow
+  and wrist alignment, and leave enough space in the composition to inspect the
+  whole hand and its contact with the object. Prefer a clear waist-up view for
+  a handheld demonstration. Avoid extreme foreshortening, crossed arms, and
+  complicated overlapping fingers unless the scene specifically needs them.
+- Define a prop concretely: its type, size relative to the torso or hand,
+  orientation, which surface faces the camera, and where its weight is supported.
+  Use two hands or an appropriate resting surface for a large or heavy object.
+  Specify the contact points appropriate to that object; do not reuse a generic
+  grip for every prop. If one hand gestures, the remaining support must still make
+  sense. Keep the face unobstructed for the talking performance.
+- Use concise positive descriptions such as "relaxed wrists aligned with the
+  forearms" and "fingers naturally curled around the handle." Add only relevant
+  exclusions, such as "no duplicated hands or fingers passing through the device."
+  Avoid long repetitive negative lists and claims that words such as "perfect
+  anatomy" guarantee success. Preserve the character's intended anatomy; natural
+  occlusion does not require every finger or limb to be visible.
+- Keep action and camera movement in the video direction compatible with the
+  still pose. For a supported device, request subtle head and facial movement
+  while the grip remains steady; do not also request vigorous hand gestures.
+- When automatic prompt enhancement is available, prefer it off for these
+  deliberately specified prompts. If the product exposes enhanced text, review it
+  for changes to identity, pose, framing, or grip before submitting. If enhancement
+  cannot be controlled or reviewed, record that limitation and judge the actual
+  output using the image checkpoint; do not assume the wording was preserved.
+
+Example for a lightweight tablet (adapt the object and emotion to the scene):
+
+"<ENTIRE BIBLE VERBATIM> One person, excited smile, looking at the camera in an
+eye-level waist-up view. She holds a tablet approximately the width of her torso
+in landscape orientation at lower-chest height, screen facing the camera below
+her face. Both elbows are comfortably bent close to her body. Each hand supports
+one lower corner, fingers curled behind the tablet and thumbs resting lightly
+along the front bezel. Wrists align naturally with the forearms. Both hands and
+the complete tablet fit inside the frame, with believable contact and scale;
+no duplicated hands or fingers passing through the tablet."
+
+Before submitting, check that the pose is possible, the prompt gives each hand
+only one compatible job, and the framing accommodates the intended interaction.
+Do this automatically without a routine customer approval pause. This prompt
+review reduces ambiguity; the generated image must still pass visual inspection.
 
 For each scene, in story order:
 
@@ -247,12 +313,17 @@ For each scene, in story order:
    Confirm the actual returned duration; requested length is not guaranteed.
 2. Verify Vertical 9:16, Human, the primary reference, Use Consistent Character,
    Lipsync HD, and public-gallery sharing off.
-3. Fill Image Prompt with the complete bible plus this scene's expression/action.
-   Fill Video and Audio Prompt with camera, mood, movement, and the consistent
-   voice/accent direction. Put no spoken dialogue in either of these fields.
-4. Create the scene image within the agreed count. Inspect candidates and explicitly
-   select this scene's intended image in the carousel. Verify selection and that
+3. Construct and review Image Prompt using the guidance above, including the
+   complete bible and this scene's expression, pose, framing, and object interaction.
+   Where enabled, fill Video and Audio Prompt with camera, mood, movement, and the
+   consistent voice/accent direction. If Lipsync HD disables it, provide these in
+   the next dialog's Video Prompt. Put no spoken dialogue in either prompt field.
+4. Create the scene image within the agreed count. Apply the image checkpoint below
+   after each generation and correction, before selecting an image for video.
+   Explicitly select this scene's passing image in the carousel. Verify selection and that
    Create Video is enabled; accumulated carousel items may belong to other scenes.
+   Save the selected passing image to the product library for recovery before
+   continuing. Verify the save; check the library before retrying a timed-out save.
 5. Recheck public-gallery sharing off, then use the visible Create Video control.
    In the Create Lipsync Audio dialog, its Video Prompt identifies the actor and
    directs emotional delivery, without quoting the spoken line. Examples:
@@ -269,12 +340,71 @@ For each scene, in story order:
 8. Check progress roughly every 30 seconds; images may be checked more frequently.
    Respect the active dialog's concurrency limits. A timeout does not prove failure:
    inspect existing jobs before resubmitting. Follow the bounded recovery below.
-9. Inspect the completed clip for character consistency, clothing, hands, mouth
+9. Review the entire completed clip inside VideoExpress, pausing through movement
+   to check both arms and hands, their connections, and any changing object grip.
+   A passed source image does not establish a passed video. Reject duplicated or
+   appearing/disappearing limbs; record any parts of playback not verified.
+   Inspect the completed clip for character consistency, clothing, hands, mouth
    movement, and framing; listen for the intended speech and delivery when audio
    review is supported. Verify lip-sync using audiovisual playback. A closed mouth
    during speech calls for checking dialogue placement, not assuming a cause.
 10. Correct only affected scenes within the retry and batch limits. Preserve previous
     successful outputs. Save the project after each completed group of scenes.
+
+### Image checkpoint — before saving a reference or creating a video
+
+This is an automatic visual review by the agent, not a routine customer approval
+pause. Inspect the actual image inside VideoExpress using Image Preview, View at
+full size, and the product's zoom/pan controls. Check the whole composition and
+enlarge the face, hands, joints, and object-contact areas as needed. Do not download
+reference or scene images just for quality inspection. Save Image means saving to
+the product library when needed, not downloading a local inspection copy. The final
+MP4 download remains part of delivery. Do not pass an image from its prompt,
+thumbnail, or completed status alone. Apply this
+check after every reference or scene image generation, including replacements.
+Inspect every candidate proposed for use; unused candidates need not be reviewed.
+
+- Character continuity: compare the face, apparent age, hair, build, clothing,
+  and setting against the chosen reference and character bible.
+- Visible anatomy: check for extra, duplicated, missing, fused, or disconnected
+  limbs; unnatural shoulders, elbows, wrists, joints, proportions, and posture.
+  Assess what is visible: a naturally hidden or cropped limb is not a missing limb.
+  Do not require every character to have identical anatomy or body proportions.
+- Hands: inspect visible fingers, thumbs, palms, and wrist connections for fused
+  or extra digits, duplication, implausible bending, and disconnected contact.
+  Do not demand five visible fingers when some are naturally occluded.
+  Before examining fingers, count all visible hands across the whole composition
+  and trace each to its wrist, elbow, and shoulder. Check the chest, waist, sides,
+  and frame edges for a stray hand; a plausible close-up of one hand is not a pass
+  for the whole body. Record which hands are visible, occluded, or cropped.
+- Object interaction: check the object's size and orientation, plausible finger
+  placement and grip, contact and occlusion, and support appropriate to its apparent
+  weight. Reject a large device floating above a hand, fingers passing through it,
+  a palm facing an impossible direction, or a grip that cannot support the pose.
+- Whole image: check facial distortion, merged body/object edges, unintended extra
+  people, and framing that hides an interaction essential to understanding the scene.
+
+Record pass, fail, or not verified with a brief observation for the reference and
+each selected scene image. If detail is too small, enlarge it; if it remains
+unclear, mark it not verified. Do not claim anatomically perfect output: this check
+establishes that no visible defect was found at the available inspection quality.
+If visual inspection is unavailable, preserve progress and report the limitation
+instead of automatically sending an unverified image to video generation.
+
+For a failed candidate, choose an already-generated passing alternative first.
+Otherwise regenerate only the affected image within the replacement and batch
+limits. Keep the character bible and voice direction unchanged; refine only the
+scene's action/pose/object-interaction clause to address the observed defect.
+For example, specify a natural two-handed grip on the device's lower side edges,
+thumbs on its front edges and fingers supporting it from behind, with relaxed,
+aligned wrists. Choose directions appropriate to the actual object and pose;
+do not add unrelated anatomy instructions or change the intended scene meaning.
+Inspect the replacement again. Preserve successful prior images and do not select
+a known defective image merely because its Create Video button is enabled.
+
+Only passing images proceed to video generation. The completed video still needs
+the separate visual and audiovisual checks in Step 4: animation can introduce new
+defects even when its source image passed.
 
 ### Step 5 — Assemble the timeline
 
@@ -327,6 +457,8 @@ For each scene, in story order:
 ## 5. Verification and completion evidence
 
 - Generation: the intended asset exists and has completed, matched to its scene.
+- Image review: the reference and each selected scene image passed the visible
+  anatomy, character-continuity, and object-interaction checkpoint before use.
 - Editing: all intended clips/audio are in story order, with matching trim and
   timing boundaries and no unintended gaps or duplicate insertions.
 - Saving: the intended project is saved, supported by the product confirmation.
@@ -349,8 +481,9 @@ before navigation; prefer closing/reopening a stuck dialog to reloading the page
 Verify saved assets and existing jobs, then resume the smallest unfinished step.
 If the same operation still fails after recovery, report the observed blocker.
 
-For generation failures or unacceptable clips, permit at most two replacement
-attempts per scene, with at most four replacement jobs across this project, always
+For generation failures or unacceptable images or clips, permit at most two
+replacement attempts per scene (image and video replacements combined), and at
+most two for the reference, with at most four replacement jobs across this project, always
 within the approved batch count. Check for an existing or completed job before
 every submission. Keep usable prior candidates. If no acceptable result exists
 within those limits, save progress and report the limitation rather than silently
