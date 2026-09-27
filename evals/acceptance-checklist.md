@@ -5,7 +5,7 @@ Record pass, fail, or not verified with brief evidence. Do not mark a check pass
 ## Scope and privacy
 
 - [ ] Topic, reference choice, project, and authorized scope are established.
-- [ ] Any required batch approval covers the route/product, disclosed model, and image count.
+- [ ] Any required batch approval covers the product, disclosed model, and image count.
 - [ ] Public-gallery sharing is off before each generation.
 - [ ] No unapproved provider, purchase, public publishing, deletion, or account-wide setting change occurred.
 - [ ] Asset rights and any requested voice-cloning consent are established; no secrets are saved in production notes.
@@ -40,3 +40,4 @@ Record pass, fail, or not verified with brief evidence. Do not mark a check pass
 - [ ] Existing jobs were checked before retries; successful and approved assets were preserved.
 - [ ] Retry limits and the separate pending-job waiting limit were respected.
 - [ ] Any blocker is reported with the observed error and remaining work, without inventing a security diagnosis.
+
